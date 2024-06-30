@@ -6,12 +6,14 @@ import { AppComponent } from './app.component';
 import { provideAnimationsAsync } from '@angular/platform-browser/animations/async';
 
 import { BotaoComponent } from './componentes/botao/botao.component';
+import { LoginComponent } from './pages/login/login.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
     BotaoComponent,
+    LoginComponent,
   ],
   imports: [
     BrowserModule,
