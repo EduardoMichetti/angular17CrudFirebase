@@ -1,4 +1,4 @@
-import { Component, Input, OnInit } from '@angular/core';
+import { Component, Input, OnInit, input } from '@angular/core';
 
 @Component({
   selector: 'app-botao',
@@ -8,6 +8,7 @@ import { Component, Input, OnInit } from '@angular/core';
 export class BotaoComponent implements OnInit {
 
   @Input() textoBotao: string = 'LOGIN';
+  @Input() tamanhoBotao: string = 'auto';
 
   constructor() { }
 
