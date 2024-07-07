@@ -6,5 +6,9 @@ import { Component } from '@angular/core';
   styleUrl: './home.component.scss'
 })
 export class HomeComponent {
+  nomeUsuario: string | null;
 
+  ngOnInit(){
+    this.nomeUsuario = sessionStorage.getItem('usuario');
+  }
 }
